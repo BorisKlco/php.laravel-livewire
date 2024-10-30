@@ -25,7 +25,7 @@
             <ul>
                 @foreach ($articles as $article)
                     <li class="py-2">
-                        <p>{{ str($article->title)->words(4) }}</p>
+                        <a href="/articles/{{ $article->id }}">{{ str($article->title)->words(4) }}</a>
                         <p>{{ str($article->article)->words(12) }}</p>
                     </li>
                 @endforeach
